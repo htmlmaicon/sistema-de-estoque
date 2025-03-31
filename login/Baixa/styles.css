@@ -1,0 +1,143 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', sans-serif;
+    background-image: url("../imagens/fundo.png");
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container principal - Estilo barril */
+.container {
+    background: rgba(255, 248, 240, 0.95);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(139, 94, 59, 0.3);
+    width: 90%;
+    max-width: 400px;
+    border: 3px solid #6D4423;
+    position: relative;
+    margin: 1rem;
+}
+
+/* Título estilo placa de madeira */
+h2 {
+    color: #6D4423;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Botão de logout estilo tachinha */
+.logout-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: #8B5E3B;
+    color: #FFF8F0;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #6D4423;
+    transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+    background: #6D4423;
+    transform: scale(1.05);
+}
+
+/* Formulário */
+.form {
+    width: 100%;
+}
+
+/* Grupo do formulário */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+/* Rótulos estilo etiqueta */
+label {
+    display: block;
+    font-size: 0.9rem;
+    color: #6D4423;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+/* Inputs estilo barril */
+input, select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #8B5E3B;
+    border-radius: 8px;
+    background: #FFF8F0;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: #6D4423;
+    outline: none;
+    box-shadow: 0 0 5px rgba(139, 94, 59, 0.3);
+}
+
+/* Botão principal estilo torneira */
+.btn {
+    background: linear-gradient(to bottom, #8B5E3B, #6D4423);
+    color: #FFF8F0;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    background: linear-gradient(to bottom, #6D4423, #543519);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(109, 68, 35, 0.3);
+}
+
+/* Mensagem de sucesso estilo etiqueta */
+.success-message {
+    color: #2a5a2a;
+    background: #e1f3e1;
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: 2px solid #2a5a2a;
+    margin: 1rem 0;
+    font-size: 0.9rem;
+}
+
+/* Detalhes decorativos */
+.container::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 2px solid #8B5E3B;
+    border-radius: 20px;
+    z-index: -1;
+    opacity: 0.3;
+}

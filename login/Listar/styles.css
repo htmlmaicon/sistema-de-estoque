@@ -1,0 +1,114 @@
+/* Estilos cervejeiros */
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    background: url(../imagens/fundo.png) fixed,
+              linear-gradient(rgba(67, 45, 16, 0.9), rgba(40, 27, 9, 0.9));
+    background-blend-mode: multiply;
+    color: #FFF8F0;
+    padding: 2rem;
+}
+
+.produtos-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    background: rgba(255, 248, 240, 0.9);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 8px 30px rgba(109, 68, 35, 0.3);
+    border: 3px solid #6D4423;
+}
+
+h2 {
+    color: #FFD700;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.acoes-header {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.acoes-header a {
+    padding: 0.8rem 1.5rem;
+    background: linear-gradient(to bottom, #8B5E3B, #6D4423);
+    color: #FFF8F0;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid #543519;
+}
+
+.acoes-header a:hover {
+    background: linear-gradient(to bottom, #6D4423, #543519);
+    transform: translateY(-2px);
+}
+
+.produto-lista {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.produto-item {
+    background: #FFF8F0;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 2px solid #8B5E3B;
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr 1fr 1fr auto;
+    align-items: center;
+    gap: 1rem;
+}
+
+.produto-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #6D4423;
+}
+
+.produto-info {
+    color: #6D4423;
+}
+
+.produto-acoes {
+    display: flex;
+    gap: 1rem;
+}
+
+.produto-acoes a {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.editar-btn {
+    background: #2E7D32;
+    color: #FFF8F0;
+}
+
+.excluir-btn {
+    background: #b71c1c;
+    color: #FFF8F0;
+}
+
+.produto-acoes a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo do formulário de edição */
+.editar-form {
+    margin-top: 3rem;
+    background: rgba(255, 248, 240, 0.95);
+    padding: 2rem;
+    border-radius: 15px;
+    border: 3px solid #6D4423;
+}

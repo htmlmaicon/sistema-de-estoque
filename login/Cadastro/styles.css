@@ -1,0 +1,107 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', sans-serif;
+    background-image: url(../imagens/fundo.png), linear-gradient(rgba(109, 68, 35, 0.9), rgba(139, 94, 59, 0.8));
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #FFF8F0;
+}
+
+h1 {
+    color: #FFD700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
+    margin: 1rem 0;
+}
+
+h2 {
+    color: #FFD700;
+    border-bottom: 2px solid #8B5E3B;
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+a {
+    display: inline-block;
+    margin: 1rem 0;
+    padding: 0.8rem 1.5rem;
+    background: #8B5E3B;
+    color: #FFD700;
+    text-decoration: none;
+    border-radius: 25px;
+    border: 2px solid #6D4423;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+a:hover {
+    background: #6D4423;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(109, 68, 35, 0.3);
+    text-decoration: none;
+}
+
+form {
+    background: rgba(255, 248, 240, 0.9);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(139, 94, 59, 0.3);
+    border: 3px solid #6D4423;
+    width: 90%;
+    max-width: 400px;
+    margin: 1.5rem 0;
+}
+
+input, textarea, button {
+    margin: 0.8rem 0;
+    padding: 1rem;
+    border: 2px solid #8B5E3B;
+    border-radius: 8px;
+    background: #FFF8F0;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #6D4423;
+    outline: none;
+    box-shadow: 0 0 8px rgba(139, 94, 59, 0.3);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+button {
+    background: linear-gradient(to bottom, #8B5E3B, #6D4423);
+    color: #FFF8F0;
+    border: none;
+    padding: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: linear-gradient(to bottom, #6D4423, #543519);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(109, 68, 35, 0.3);
+}
+
+p {
+    color: #FFD700;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 8px;
+    background: rgba(139, 94, 59, 0.3);
+    border: 2px solid #6D4423;
+}
